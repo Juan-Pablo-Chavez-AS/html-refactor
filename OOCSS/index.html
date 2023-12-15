@@ -6,23 +6,27 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="index.js" defer></script>
-    <title>Original</title>
+    <title>OOCSS refactor</title>
 </head>
-<body>
-    <div id="login-page">
-        <div class="form">
+<body class="main main-green">
+    <div class="login-page">
+        <div class="form-container form-container-white">
             <form class="register-form">
-                <input type="text" placeholder="name"/>
-                <input type="password" placeholder="password"/>
-                <input type="text" placeholder="email address"/>
-                <button class="blue-button">create</button>
-                <p class="message">Already registered? <a href="#">Sign In</a></p>
+                <input class="form-input" type="text" placeholder="name"/>
+                <input class="form-input" type="password" placeholder="password"/>
+                <input class="form-input" type="text" placeholder="email address"/>
+                <button class="button button-blue">create</button>
+                <p class="message message-gray">Already registered?
+                    <a class="link link-green" href="#">Sign In</a>
+                </p>
             </form>
             <form class="login-form">
-                <input type="text" placeholder="username"/>
-                <input type="password" placeholder="password"/>
-                <button class="green-button">login</button>
-                <p class="message">Not registered? <a href="#">Create an account</a></p>
+                <input class="form-input" type="text" placeholder="username"/>
+                <input class="form-input" type="password" placeholder="password"/>
+                <button class="button button-green">login</button>
+                <p class="message message-gray">Not registered?
+                    <a class="link link-green" href="#">Create an account</a>
+                </p>
             </form>
         </div>
     </div>
